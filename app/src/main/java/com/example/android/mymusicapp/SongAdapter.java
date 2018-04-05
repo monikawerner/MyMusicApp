@@ -2,10 +2,12 @@ package com.example.android.mymusicapp;
 
 
 import android.app.Activity;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -64,8 +66,28 @@ public class SongAdapter extends ArrayAdapter<Song> {
         /**
          * Get the artist name from the current Song object and set this text on the artist TextView
          */
-
         artist.setText(currentSong.getArtistName());
+
+
+        /**
+         * Find the ImageView in the list_item.xml layout
+         */
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.song_image);
+
+        /**
+         * Get the image resource Id from the current Song object and set this image on the ImageView
+         */
+
+        imageView.setImageResource(currentSong.getImageResourceId());
+
+
+        /**
+         * Find the ImageView in the list_item.xml layout
+         */
+
+        ImageView icon = (ImageView) listItemView.findViewById(R.id.icon);
+        icon.setImageResource(R.drawable.note);
+
 
         return listItemView;
     }
