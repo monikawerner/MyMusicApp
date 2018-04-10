@@ -24,7 +24,7 @@ public class Artist {
      *
      * @param artistName        is the artist name
      * @param imageResourceId   is the photo representing the artist
-     * @param artistDescription is description of artist
+     * @param artistDescription is the description of the artist
      */
     public Artist(String artistName, int imageResourceId, int artistDescription) {
         mArtistName = artistName;

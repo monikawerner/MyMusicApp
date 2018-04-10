@@ -18,6 +18,10 @@ public class ArtistDescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist_description);
 
+        /**
+         * get the data from ArtistActivity and display them
+         */
+
         descriptionArtistName = getIntent().getStringExtra("CLICKED_ARTIST_NAME");
         descriptionArtistImage = getIntent().getIntExtra("CLICKED_ARTIST_IMAGE", R.drawable.imagine_dragons);
         descriptionArtistDescription = getIntent().getIntExtra("CLICKED_ARTIST_DESCRIPTION", R.string.imagine_dragons);

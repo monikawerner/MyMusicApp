@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.mymusicapp.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/welcome_padding_top"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/welcome_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/music" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        style="@style/buttons">
+
+        <TextView
+            android:id="@+id/library"
+            style="@style/button"
+            android:text="@string/library" />
+
+        <TextView
+            android:id="@+id/artists"
+            style="@style/button"
+            android:text="@string/artists" />
+
+        <TextView
+            android:id="@+id/play_the_music"
+            style="@style/button"
+            android:text="@string/play" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

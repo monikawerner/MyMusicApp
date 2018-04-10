@@ -20,6 +20,10 @@ public class NowPlayingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        /**
+         * get data from LibraryActivity and display them
+         */
+
         songPlaying = getIntent().getStringExtra("CLICKED_ITEM_SONG");
         artistPlaying = getIntent().getStringExtra("CLICKED_ITEM_ARTIST");
         imagePlaying = getIntent().getIntExtra("CLICKED_ITEM_IMAGE", R.drawable.thunder);
