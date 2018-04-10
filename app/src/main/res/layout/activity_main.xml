@@ -11,66 +11,38 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_gravity="center"
-        android:paddingTop="36dp"
-        android:text="Welcome to the world of music!"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"/>
+        android:layout_weight="1"
+        android:paddingTop="@dimen/welcome_padding_top"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/welcome_text_size"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="4"
-        android:src="@drawable/music"
-        />
-
-
+        android:src="@drawable/music" />
 
     <LinearLayout
         android:id="@+id/buttons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:orientation="horizontal">
+        style="@style/buttons">
 
         <TextView
             android:id="@+id/library"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Library"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"/>
+            style="@style/button"
+            android:text="@string/library" />
 
         <TextView
             android:id="@+id/artists"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Artists"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"/>
+            style="@style/button"
+            android:text="@string/artists" />
 
         <TextView
             android:id="@+id/play_the_music"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Play the music"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"/>
-
+            style="@style/button"
+            android:text="@string/play" />
 
     </LinearLayout>
 

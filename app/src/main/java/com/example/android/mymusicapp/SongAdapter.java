@@ -16,7 +16,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
     /**
      * @param context The current context. Used to inflate the layout file.
-     * @param songs A List of song objects to display in a list
+     * @param songs   A List of song objects to display in a list
      */
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         super(context, 0, songs);
@@ -92,4 +92,4 @@ public class SongAdapter extends ArrayAdapter<Song> {
         return listItemView;
     }
 
-    }
+}

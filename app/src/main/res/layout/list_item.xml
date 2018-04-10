@@ -10,21 +10,23 @@
     <ImageView
         android:id="@+id/song_image"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"
-        android:padding="@dimen/list_item_image_padding" />
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thunder" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/list_item_text_container_paddingLeft">
+        android:paddingLeft="@dimen/list_item_paddingLeft">
 
         <TextView
             android:id="@+id/song"
             style="@style/listItemTextView"
             android:gravity="bottom"
-            android:textSize="16sp"
+            android:textSize="@dimen/name_text_size"
             android:textStyle="bold"
             tools:text="Thunder" />
 
@@ -32,17 +34,17 @@
             android:id="@+id/artist"
             style="@style/listItemTextView"
             android:gravity="top"
-            android:textSize="14sp"
+            android:textSize="@dimen/song_text_size"
             tools:text="Imagine Dragons" />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/icon"
-        android:src="@drawable/note"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="@dimen/list_item_icon_height"
+        android:layout_gravity="center"
         android:layout_weight="2"
-        android:layout_gravity="center"/>
+        android:src="@drawable/note" />
 
 </LinearLayout>

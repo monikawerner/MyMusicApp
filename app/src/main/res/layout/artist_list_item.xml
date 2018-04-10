@@ -9,16 +9,26 @@
 
     <ImageView
         android:id="@+id/artist_image"
-        android:src="@drawable/thunder"
+        android:src="@drawable/imagine_dragons"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"
-        android:padding="@dimen/list_item_image_padding" />
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/artist_list_item_margin"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/artist_name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/artist_list_item_margin"
         android:gravity="center"
-        tools:text="Imagine Dragons"
-        />
+        android:textSize="@dimen/artist_list_item_text_size"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Imagine Dragons" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:visibility="invisible"
+        tools:text="@string/imagine_dragons"/>
 </LinearLayout>

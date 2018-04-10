@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="welcome_padding_top">36dp</dimen>
+    <dimen name="welcome_text_size">20sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
     <dimen name="list_item_height">88dp</dimen>
     <dimen name="list_item_image_padding">8dp</dimen>
-    <dimen name="list_item_text_container_paddingLeft">16dp</dimen>
+    <dimen name="list_item_paddingLeft">16dp</dimen>
+    <dimen name="list_item_icon_height">30dp</dimen>
+    <dimen name="artist_list_item_margin">24dp</dimen>
+    <dimen name="artist_list_item_text_size">18sp</dimen>
+    <dimen name="description_image_height">200dp</dimen>
+    <dimen name="description_image_padding">16dp</dimen>
+    <dimen name="description_padding">8dp</dimen>
+    <dimen name="description_name_padding">36dp</dimen>
+    <dimen name="name_text_size">16sp</dimen>
+    <dimen name="song_text_size">14sp</dimen>
+    <dimen name="now_playing_name_padding">16dp</dimen>
+    <dimen name="multimedia_buttons_margin">50dp</dimen>
+
 </resources>

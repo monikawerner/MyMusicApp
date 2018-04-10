@@ -25,7 +25,7 @@ public class LibraryActivity extends AppCompatActivity {
 
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Imagine Dragons", "Thunder", R.drawable.thunder, R.drawable.note));
-        songs.add(new Song("Green Day", "Basket Case", R.drawable.basket_case , R.drawable.note));
+        songs.add(new Song("Green Day", "Basket Case", R.drawable.basket_case, R.drawable.note));
         songs.add(new Song("Luis Fonsi feat. Daddy Yankee", "Despacito", R.drawable.despacito, R.drawable.note));
         songs.add(new Song("Metallica", "Nothing Else Matters", R.drawable.nothing_else_matters, R.drawable.note));
         songs.add(new Song("Mozart", "Eine Kleine Nachtmusik", R.drawable.eine_kleine_nachtmusic, R.drawable.note));
@@ -78,20 +78,3 @@ public class LibraryActivity extends AppCompatActivity {
 
     }
 }
-/**
- Intent intent = new Intent(getBaseContext(), SignoutActivity.class);
- intent.putExtra("EXTRA_SESSION_ID", sessionId);
- startActivity(intent);
-
- bind.list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-@Override
-public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-Intent playerIntent = new Intent(SongsActivity.this, PlayerActivity.class);
-String songTitle = songsToPick.get(position).getSongTitle();
-playerIntent.putExtra("flag", "allSongs");
-playerIntent.putExtra("clickedItem", songTitle);
-playerIntent.putParcelableArrayListExtra("allSongs", allSongs);
-startActivity(playerIntent);
-}
-});
- */

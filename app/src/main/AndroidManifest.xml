@@ -21,10 +21,14 @@
             android:label="Library" />
         <activity
             android:name=".NowPlayingActivity"
-            android:label="Now Playing"/>
+            android:label="Now Playing" />
         <activity
             android:name=".ArtistsActivity"
-            android:label="Artists"></activity>
+            android:label="Artists" />
+        <activity
+            android:name=".ArtistDescriptionActivity"
+            android:label="Artist Description"
+            ></activity>
     </application>
 
 </manifest>

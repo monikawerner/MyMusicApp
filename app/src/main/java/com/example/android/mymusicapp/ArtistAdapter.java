@@ -32,7 +32,6 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        super.getView(position, convertView, parent);
 
         /**
          * Check if the existing view is being reused, otherwise inflate the view
@@ -68,7 +67,17 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
          * Get the image resource Id from the current Artist object and set this image on the ImageView
          */
 
-        artistImage.setImageResource(currentArtist.getPhotoResourceId());
+        artistImage.setImageResource(currentArtist.getImageResourceId());
+
+        /**
+         * Find the TextView in the artist_list_item.xml layout
+         */
+        TextView artistDescription = (TextView) artistListItemView.findViewById(R.id.description);
+
+        /**
+         * Get the artist description from the current Artist object and set this text on the description TextView
+         */
+        artistDescription.setText(currentArtist.getArtistDescription());
 
         return artistListItemView;
     }

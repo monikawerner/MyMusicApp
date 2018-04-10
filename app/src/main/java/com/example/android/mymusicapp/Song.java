@@ -3,23 +3,31 @@ package com.example.android.mymusicapp;
 
 public class Song {
 
-    /** Artist name */
+    /**
+     * Artist name
+     */
     private String mArtistName;
 
-    /** Song title */
+    /**
+     * Song title
+     */
     private String mSongTitle;
 
-    /** Image */
+    /**
+     * Image
+     */
     private int mImageResourceId;
 
-    /** Icon */
+    /**
+     * Icon
+     */
     private int mIcon;
 
     /**
      * Create a new Song object.
      *
-     * @param artistName is the artist name
-     * @param songTitle is the title of the song
+     * @param artistName      is the artist name
+     * @param songTitle       is the title of the song
      * @param imageResourceId is the image representing the song
      */
     public Song(String artistName, String songTitle, int imageResourceId, int icon) {
@@ -46,7 +54,11 @@ public class Song {
     /**
      * Get the image.
      */
-    public int getImageResourceId () { return mImageResourceId; }
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 
-    public int getIcon () {return mIcon; }
+    public int getIcon() {
+        return mIcon;
+    }
 }
