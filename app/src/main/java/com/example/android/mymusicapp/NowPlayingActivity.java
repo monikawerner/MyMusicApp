@@ -3,6 +3,7 @@ package com.example.android.mymusicapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,14 +12,17 @@ import android.widget.TextView;
 
 public class NowPlayingActivity extends AppCompatActivity {
 
+
     String songPlaying;
     String artistPlaying;
     int imagePlaying;
+    int audioPlaying;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
+
 
         /**
          * get data from LibraryActivity and display them
@@ -27,6 +31,7 @@ public class NowPlayingActivity extends AppCompatActivity {
         songPlaying = getIntent().getStringExtra("CLICKED_ITEM_SONG");
         artistPlaying = getIntent().getStringExtra("CLICKED_ITEM_ARTIST");
         imagePlaying = getIntent().getIntExtra("CLICKED_ITEM_IMAGE", R.drawable.thunder);
+        audioPlaying = getIntent().getIntExtra("CLICKED_ITEM_AUDIO", R.raw.thunder);
 
         TextView nowPlayingSong = (TextView) findViewById(R.id.now_playing_song);
         nowPlayingSong.setText(songPlaying);

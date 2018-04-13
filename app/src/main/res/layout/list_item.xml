@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/thunder" />
+        android:src="@drawable/thunder"
+        android:contentDescription="@string/imagine_dragons"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +42,7 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_icon_height"
         android:layout_gravity="center"
         android:layout_weight="2"
