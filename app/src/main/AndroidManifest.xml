@@ -18,16 +18,20 @@
         </activity>
         <activity
             android:name=".LibraryActivity"
-            android:label="Library" />
+            android:label="Library"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NowPlayingActivity"
-            android:label="Now Playing" />
+            android:label="Now Playing"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ArtistsActivity"
-            android:label="Artists" />
+            android:label="Artists"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ArtistDescriptionActivity"
             android:label="Artist Description"
+            android:parentActivityName=".MainActivity"
             ></activity>
     </application>
 
