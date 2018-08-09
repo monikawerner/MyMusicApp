@@ -68,11 +68,11 @@ public class NowPlayingActivity extends AppCompatActivity {
         imagePlaying = getIntent().getIntExtra("CLICKED_ITEM_IMAGE", R.drawable.thunder);
         audioPlaying = getIntent().getIntExtra("CLICKED_ITEM_AUDIO", R.raw.thunder);
 
-        TextView nowPlayingSong = (TextView) findViewById(R.id.now_playing_song);
+        TextView nowPlayingSong = findViewById(R.id.now_playing_song);
         nowPlayingSong.setText(songPlaying);
-        TextView nowPlayingArtist = (TextView) findViewById(R.id.now_playing_artist);
+        TextView nowPlayingArtist = findViewById(R.id.now_playing_artist);
         nowPlayingArtist.setText(artistPlaying);
-        ImageView nowPlayingImage = (ImageView) findViewById(R.id.now_playing_image);
+        ImageView nowPlayingImage = findViewById(R.id.now_playing_image);
         nowPlayingImage.setImageResource(imagePlaying);
 
 
@@ -81,7 +81,7 @@ public class NowPlayingActivity extends AppCompatActivity {
         /**
          * find the View that shows library and set a click listener on it
          */
-        TextView library = (TextView) findViewById(R.id.library);
+        TextView library = findViewById(R.id.library);
         library.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
